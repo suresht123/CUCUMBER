@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions( features ="src//test//resources//features//mobile.feature",
+@CucumberOptions( features ="src//test//resources//features//tv.feature",
 //                     glue  = "com.flipkart.stepdefinition",
                        plugin ="html:target",
                        monochrome =true,

@@ -9,31 +9,32 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import com.flipkart.object.MobilePage;
+import com.flipkart.object.TvPage;
 import com.flipkart.resources.CommonActions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 
-//public class tvpurchase  extends CommonActions{
-//	 CommonActions comm = new  CommonActions();
-//
-//	
-////     static WebDriver driver ;
-//	
-//	
-//	@Given("user login into flipkart")
-//	public void user_login_into_flipkart() {
-//
-//        
-//        try{
-////       mo.getLogin().isDisplayed();
-//       t.getLogin().click();
-//        
-//        } catch (Exception e){	
-//        	System.out.println("login not required");	
-//        }
-//	}
+public class tvpurchase  extends CommonActions{
+	 CommonActions comm = new  CommonActions();
+	 TvPage t = new  TvPage ();
+
+	
+//   static WebDriver driver ;
+
+	@Given("user login into flipkarttv")
+	public void user_login_into_flipkarttv() {
+
+        
+        try{
+//       mo.getLogin().isDisplayed();
+       t.getLogin().click();
+        
+        } catch (Exception e){	
+        	System.out.println("login not required");	
+        }
+	}
 
 		
 	String names;
@@ -42,13 +43,13 @@ import io.cucumber.datatable.DataTable;
 		
          names= "MITV";
 		
-//
-// 		WebElement element = t.getSearch();
-// 		
-// 		comm.insertTextjs(element, names);
-// 		WebElement mobilename = driver.findElement(By.xpath("(//div[contains(text(),'"+names+"')])[2]"));
-// 		String fn = mobilename.getText();
-// 		mobilename.click();
+
+ 		WebElement element1 = t.getSearch();
+ 		
+ 		comm.insertTextjs(element1, names);
+ 		WebElement mobilename = driver.findElement(By.xpath("//div[@class='_4rR01T']"));
+ 		String fn = mobilename.getText();
+ 		mobilename.click();
 		
 	}
 

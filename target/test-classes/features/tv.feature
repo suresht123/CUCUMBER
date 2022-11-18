@@ -3,7 +3,7 @@
 Feature: Tvpurchase
 
  Background:
-    Given user login into flipkart
+    Given user login into flipkarttv
 
   Scenario: tv purchase
     When user search required tv
@@ -11,7 +11,6 @@ Feature: Tvpurchase
     And user select payment method in UPI
     Then user got the confirmation 
     
-
 
     Scenario: tv purchase
     When user search required tv by using oneD list
